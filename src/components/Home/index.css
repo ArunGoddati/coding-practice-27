@@ -1,0 +1,60 @@
+.home-container-image {
+  height: 200px;
+  width: 200px;
+}
+.home-main-heading {
+  font-family: 'roboto';
+  color: #1e293b;
+  font-size: 27px;
+  text-align: center;
+}
+.home-paragraph {
+  color: #475569;
+  font-size: 14px;
+  text-align: center;
+}
+.home-button {
+  background-color: #0b69ff;
+  border-radius: 5px;
+  color: #ffffff;
+  height: 40px;
+  width: 100px;
+  border-width: 0px;
+}
+.home-bottom-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home-bottom-inner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-container-image-bigScreen {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .home-container-image {
+    display: none;
+  }
+  .home-bottom-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-container-image-bigScreen {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-left: 50px;
+  }
+  .home-bottom-inner-container {
+    width: 300px;
+  }
+}
